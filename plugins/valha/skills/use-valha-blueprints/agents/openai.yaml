@@ -1,0 +1,11 @@
+interface:
+  display_name: "Use Valha Blueprints"
+  short_description: "Reuse and improve reviewed Valha methods"
+  default_prompt: "Use $use-valha-blueprints to find and deliberately apply a reusable method for this task."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "valha"
+      description: "Valha Blueprint, page publishing, and knowledge MCP"
+      transport: "streamable_http"
+      url: "https://valha.link/mcp"

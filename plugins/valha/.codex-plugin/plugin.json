@@ -1,0 +1,27 @@
+{
+  "name": "valha",
+  "version": "0.1.0",
+  "description": "Publish durable AI work pages and reuse trusted Valha knowledge.",
+  "author": {
+    "name": "Valha",
+    "url": "https://valha.link"
+  },
+  "homepage": "https://valha.link",
+  "repository": "https://github.com/Alex-Levacher/valha.link",
+  "keywords": ["ai-native documents", "knowledge", "mcp", "publishing"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Valha",
+    "shortDescription": "Publish and reuse durable AI work pages",
+    "longDescription": "Turn completed AI-assisted work into deliberate Valha pages, then find and reuse trusted team knowledge in later work.",
+    "developerName": "Valha",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://valha.link",
+    "defaultPrompt": [
+      "Publish this work as a Valha page.",
+      "Find relevant Valha knowledge for this task."
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "valha",
+  "interface": {
+    "displayName": "Valha"
+  },
+  "plugins": [
+    {
+      "name": "valha",
+      "source": {
+        "source": "local",
+        "path": "./plugins/valha"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

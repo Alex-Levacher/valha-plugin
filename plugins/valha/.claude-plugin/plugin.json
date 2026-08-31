@@ -1,0 +1,10 @@
+{
+  "name": "valha",
+  "version": "0.1.0",
+  "description": "Publish durable AI work pages and reuse trusted Valha knowledge.",
+  "author": {
+    "name": "Valha"
+  },
+  "homepage": "https://valha.link",
+  "repository": "https://github.com/Alex-Levacher/valha.link"
+}

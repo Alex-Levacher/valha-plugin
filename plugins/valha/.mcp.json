@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "valha": {
+      "type": "http",
+      "url": "https://valha.link/mcp"
+    }
+  }
+}
