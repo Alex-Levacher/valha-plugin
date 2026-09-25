@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "valha",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Official Valha plugins for AI-assisted work.",
   "owner": {
     "name": "Valha"
@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "valha",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "description": "Publish durable AI work pages and reuse trusted Valha knowledge.",
       "author": {
         "name": "Valha"

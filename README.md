@@ -1,49 +1,29 @@
 # Valha plugin beta
 
-Valha turns AI work into durable pages and lets assistants reuse trusted, permissioned knowledge.
+Valha turns useful AI work into pages people will actually read, lets assistants reuse trusted,
+permissioned knowledge, and finds reusable Blueprint methods when requested.
 This public repository distributes the official beta plugin for Codex and Claude Code. The hosted
 OAuth MCP server remains operated at `https://valha.link/mcp`; this repository contains no Valha
 server code, credentials, or customer data.
 
-## Codex
+## Install
 
 ```bash
 codex plugin marketplace add Alex-Levacher/valha-plugin
 codex plugin add valha@valha
 ```
 
-Authenticate the `valha` MCP server when prompted, then start a new task so Codex loads the plugin
-skills.
-
-## Claude Code
-
 ```bash
 claude plugin marketplace add Alex-Levacher/valha-plugin
 claude plugin install valha@valha
 ```
 
-Authenticate the Valha MCP server when prompted, then start a new session so Claude Code loads the
-plugin skills.
+Authenticate the Valha MCP server when prompted, then start a new task or session so the skills load.
+ChatGPT uses `import_illustration_file` for attached files; Codex and Claude Code use
+`create_illustration_upload` followed by `finalize_illustration_upload`.
 
-## ChatGPT developer beta
-
-ChatGPT does not install this repository during the beta. Enable Developer mode under **Settings →
-Security and login**, add a custom plugin, and use `https://valha.link/mcp` as the connection URL.
-Developer mode availability depends on the account and workspace policy. After Valha tool metadata
-changes, open the connection, select **Refresh**, and start a new conversation.
-
-The permanent installation guide is available at [valha.link/connect](https://valha.link/connect).
-
-## Updates
-
-Beta releases use `0.x` versions. Upgrade the marketplace before starting a new task or session:
-
-```bash
-codex plugin marketplace upgrade valha
-```
-
-Claude Code users can update the installed marketplace and plugin through the plugin manager. See
-[CHANGELOG.md](./CHANGELOG.md) for contract changes.
+ChatGPT beta connects directly to `https://valha.link/mcp` in Developer mode. Availability depends
+on the account and workspace policy. See [valha.link/connect](https://valha.link/connect).
 
 ## Security and terms
 

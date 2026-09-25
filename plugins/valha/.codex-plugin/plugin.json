@@ -1,27 +1,35 @@
 {
   "name": "valha",
-  "version": "0.1.0",
-  "description": "Publish durable AI work pages and reuse trusted Valha knowledge.",
+  "version": "0.3.0",
+  "description": "Turn useful AI work into readable Valha pages, reuse trusted knowledge, and find Blueprints when requested.",
   "author": {
     "name": "Valha",
     "url": "https://valha.link"
   },
   "homepage": "https://valha.link",
-  "repository": "https://github.com/Alex-Levacher/valha.link",
-  "keywords": ["ai-native documents", "knowledge", "mcp", "publishing"],
+  "repository": "https://github.com/Alex-Levacher/valha-plugin",
+  "keywords": [
+    "ai-native documents",
+    "blueprints",
+    "reusable methods",
+    "knowledge",
+    "mcp",
+    "publishing"
+  ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Valha",
-    "shortDescription": "Publish and reuse durable AI work pages",
-    "longDescription": "Turn completed AI-assisted work into deliberate Valha pages, then find and reuse trusted team knowledge in later work.",
+    "shortDescription": "Pages people actually read",
+    "longDescription": "Turn the useful outcome of AI-assisted work into a clear Valha page people can read and reuse. Find trusted knowledge in existing pages. When you ask for a Valha Blueprint, inspect a reusable method and apply it only after you select it. Page creation and sharing remain deliberate.",
     "developerName": "Valha",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://valha.link",
     "defaultPrompt": [
-      "Publish this work as a Valha page.",
-      "Find relevant Valha knowledge for this task."
+      "Save this work as a Valha page people will actually read.",
+      "Find relevant Valha knowledge for this task.",
+      "Find a suitable Valha Blueprint for this task."
     ]
   }
 }

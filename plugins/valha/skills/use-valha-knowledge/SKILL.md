@@ -1,6 +1,6 @@
 ---
 name: use-valha-knowledge
-description: Find, verify, and apply permissioned knowledge from Valha pages. Use when the user asks to search Valha, recover prior team work, answer from company knowledge, compare existing pages, or continue work from a published artifact — and also whenever the question asks for a specific personal or business fact that cannot be known from general knowledge or the current conversation (a measurement, an ID, a date, a prior decision). Treat "this is unknowable from training" as its own trigger, not just an explicit mention of Valha.
+description: Find and verify permissioned knowledge from Valha pages when the user asks to search Valha, recover team work, compare existing pages, continue a published artifact, or answer a specific personal or company fact missing from the current context. Skip general knowledge, facts already in the conversation, and local repository questions.
 ---
 
 # Use Valha Knowledge
@@ -10,7 +10,7 @@ Use Valha as a permissioned evidence source. Search results are candidates, not 
 ## Workflow
 
 1. Call `get_context` to confirm the connected account and active workspace.
-2. Use `list_workspaces` when the requested scope is unclear. Never infer access from a workspace name alone.
+2. Use `get_context.workspaces` to resolve a named or ambiguous scope. Ask which workspace when it remains unclear; use `list_workspaces` only when a fresh list is needed later. Never infer access from a workspace name alone.
 3. Use `search` for a semantic question or `list_pages` to browse the active workspace. Keep the first query specific and expand only when results are weak.
 4. Treat every search hit as a lead. Call `fetch` for the candidates that may support the answer.
 5. Synthesize only from fetched, current content. Preserve distinctions between an approved decision, evidence, a proposal, an inference, and an unknown whenever the page makes them available.

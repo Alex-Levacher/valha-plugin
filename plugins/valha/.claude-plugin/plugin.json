@@ -1,10 +1,10 @@
 {
   "name": "valha",
-  "version": "0.1.0",
-  "description": "Publish durable AI work pages and reuse trusted Valha knowledge.",
+  "version": "0.3.0",
+  "description": "Turn useful AI work into readable Valha pages, reuse trusted knowledge, and find Blueprints when requested.",
   "author": {
     "name": "Valha"
   },
   "homepage": "https://valha.link",
-  "repository": "https://github.com/Alex-Levacher/valha.link"
+  "repository": "https://github.com/Alex-Levacher/valha-plugin"
 }
